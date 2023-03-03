@@ -1,5 +1,6 @@
 import 'package:bankly/pages/loginpage.dart';
 import 'package:bankly/pages/mainpage.dart';
+import 'package:bankly/pages/transactionpage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
     final Map<String, WidgetBuilder> routes = {
       '/login': (BuildContext context) => LoginPage(),
       '/home': (BuildContext context) => HomePage(),
+      '/transaction': (BuildContext context) => TransactionPage(),
     };
     return MaterialApp(
       debugShowCheckedModeBanner: false,
